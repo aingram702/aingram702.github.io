@@ -168,12 +168,13 @@
         }
         input[type=button], input[type=submit], input[type=reset] {
             background-color: #14213d;
-            border: none;
+            border: 3px solid #fca311;
             color: #fca311;
             padding: 16px 32px;
             text-decoration: none;
             margin: 4px 2px;
             cursor: pointer;
+            transition: width 0.4s ease-in-out;
        }
        textarea {
             background-color: #14213d;
@@ -187,6 +188,12 @@
             text-decoration: none;
             margin: 4px 2px;
             cursor: pointer;
+       }
+       form {
+        text-align: center;
+       }
+       input[type=text]:focus, input[type=email]:focus, textarea[id=message]:focus {
+            width: 50%;
        }
     </style>
 </head>
