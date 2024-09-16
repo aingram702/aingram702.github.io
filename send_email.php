@@ -5,21 +5,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get POST data
     $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $subject = isset($_POST['subject']) ? strip_tags(trim($_POST['subject'])) : '';
+    $cname = isset($_POST['cname']) ? strip_tags(trim($_POST['cname'])) : '';
+    $idate = isset($_POST['idate']) ? strip_tags(trim($_POST['idate'])) : '';
     $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
 
     // Validate form fields
     if (empty($name)) {
-        $errors[] = 'Name is empty';
+        $errors[] = 'Name is EMPTY';
     }
 
     if (empty($email)) {
-        $errors[] = 'Email is empty';
+        $errors[] = 'Email is EMPTY';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = 'Email is invalid';
     }
 
+    if (empty($subject)) {
+        $errors[] = 'Subject is EMPTY';
+    
+    if (empty($cname)) {
+        $errors[] = 'Company Name is EMPTY';
+
+    if (empty($idate)) {
+        $errors[] = 'Interview Date is EMPTY';
+
     if (empty($message)) {
-        $errors[] = 'Message is empty';
+        $errors[] = 'Message is EMPTY';
     }
 
     // If no errors, send email
