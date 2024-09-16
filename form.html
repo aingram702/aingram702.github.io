@@ -122,7 +122,7 @@
         }
         input[type=button], input[type=submit], input[type=reset], textarea[id=message] {
             background-color: #14213d;
-            border: 3px solid #fca311;
+            border: 1px solid #fca311;
             color: #fca311;
             padding: 16px 32px;
             text-decoration: none;
@@ -132,7 +132,7 @@
        }
         button {
             background-color: #14213d;
-            border: none;
+            border: 1px solid #fca311;
             color: #fca311;
             padding: 16px 32px;
             text-decoration: none;
@@ -142,8 +142,9 @@
        form {
         text-align: center;
        }
-       input[type=text]:focus, input[type=email]:focus, textarea[id=message]:focus, input[id=cname]:focus {
+       input[type=text]:focus, input[type=email]:focus, textarea[id=message]:focus, input[id=cname]:focus, input[type=date]:focus {
             width: 50%;
+            border: 1px solid #fca311;
        }
     </style>
 </head>
@@ -165,23 +166,27 @@
             <p style="text-align: center; font-size: 1.2em;">To schedule an interview please fill out the form below</p>
             <form action="send_email.php" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" value="Name" required>
                 <br>
  
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" value="Email" required>
                 <br>
 
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
+                <input type="text" id="subject" name="subject" value="Subject" required>
                 <br>
 
                 <label for="cname">Company Name:</label>
-                <input type="text" id="cname" name="cname" required>
+                <input type="text" id="cname" name="cname" value="Company Name" required>
+                <br>
+
+                <label for="idate">Date Available for Interview:</label>
+                <input type="date" id="idate" name="idate" value="Date Available" required>
                 <br>
  
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" value="Message" required></textarea>
                 <br>
  
                 <button type="submit">Send</button>
