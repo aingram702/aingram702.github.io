@@ -142,7 +142,7 @@
        form {
         text-align: center;
        }
-       input[type=text]:focus, input[type=email]:focus, textarea[id=message]:focus {
+       input[type=text]:focus, input[type=email]:focus, textarea[id=message]:focus, input[id=cname]:focus {
             width: 50%;
        }
     </style>
@@ -174,6 +174,10 @@
 
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
+                <br>
+
+                <label for="cname">Company Name:</label>
+                <input type="text" id="cname" name="cname" required>
                 <br>
  
                 <label for="message">Message:</label>
