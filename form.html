@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='robots' content='noindex, nofollow'>
+    <meta name="theme-color" content="#0a192f">
 
     <!-- SEO Meta Tags -->
     <meta name="description"
@@ -29,6 +30,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f53103e36b.js" crossorigin="anonymous"></script>
+
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com">
 
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="styles.css">
@@ -59,9 +66,14 @@
         </header>
 
         <nav class="navigation" role="navigation" aria-label="Main navigation">
-            <a href="index.html">CoverLetter</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="badges.html">Achievements</a> |
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="index.html">CoverLetter</a>
+            <a href="resume.html">Resume</a>
+            <a href="badges.html">Achievements</a>
             <a href="form.html" class="active" aria-current="page">Queries</a>
         </nav>
 
@@ -71,7 +83,7 @@
                 <p class="text-center text-lg">To schedule an interview please fill out the form below</p>
 
                 <!-- Formspree Integration - Free service for static sites -->
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form action="https://formspree.io/f/mvzgenyl" method="POST">
                     <label for="name">Name: <span aria-label="required">*</span></label>
                     <input type="text" id="name" name="name" required aria-required="true">
 
@@ -93,28 +105,8 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
-
-            <!-- Instructions for Formspree -->
-            <p class="text-center">
-                <strong>Note:</strong> To activate this contact form:
-                <br>
-                1. Visit <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">formspree.io</a>
-                <br>
-                2. Sign up with your email (free tier available)
-                <br>
-                3. Create a new form and get your unique form ID
-                <br>
-                4. Replace "YOUR_FORM_ID" in the form action with your actual ID
-                <br>
-                5. Forms will be sent directly to your email!
-            </p>
-
-            <p class="text-center">Until then, email me directly at <a
-                    href="mailto:aingram702@pm.me">aingram702@pm.me</a></p>
-            <p class="text-center">--Andrew Ingram</p>
         </main>
     </div>
-
     <footer>
         <div>
             <script src="https://tryhackme.com/badge/13067"></script>
@@ -124,22 +116,8 @@
     <!-- Back to Top Button -->
     <button id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
 
-    <!-- Back to Top Script -->
-    <script>
-        const backToTopButton = document.getElementById("backToTop");
-
-        window.onscroll = function () {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        };
-
-        backToTopButton.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-    </script>
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
 </body>
 
 </html>
