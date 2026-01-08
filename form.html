@@ -1,207 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name=‘robots’ content=‘noindex, nofollow'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='robots' content='noindex, nofollow'>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Contact Andrew Ingram - Cybersecurity Specialist. Schedule an interview or inquiry about cybersecurity positions in Cincinnati, Ohio.">
+    <meta name="keywords" content="contact, cybersecurity specialist, interview request, Cincinnati cybersecurity">
+    <meta name="author" content="Andrew Jay Ingram">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aingram702.github.io/form.html">
+    <meta property="og:title" content="Contact Andrew Ingram - Cybersecurity Specialist">
+    <meta property="og:description" content="Schedule an interview or contact Andrew for cybersecurity opportunities">
+    <meta property="og:image" content="https://aingram702.github.io/files/cyber4.ico">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact Andrew Ingram">
+    <meta name="twitter:description" content="Contact form for cybersecurity opportunities">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="/files/cyber4.ico">
     <script src="https://kit.fontawesome.com/f53103e36b.js" crossorigin="anonymous"></script>
-    <title>Cybersecurity Analyst Queries </title>
-    <style>
-        body {
-            font-family: "Audiowide", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fca311;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #e5e5e5;
-            padding: 20px;
-            box-shadow: 0 0 10px #000000;
-        }
-        .container h3 {
-            color: #14213d;
-            padding-bottom: 2px;
-            padding-top: 2px;
-            text-align: center;
-            background-color: #fca311;
-            box-shadow: 0 0 10px #000000;
-        }
-        .container p {
-            color: #14213d;
-        }
-        .header {
-            text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #fca311;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #14213d;
-        }
-        .header h4 {
-            color:#14213d;
-            margin:0;
-        }
-        .header p {
-            font-size: 1.2em;
-            color: #14213d;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            font-size: 1.8em;
-            color: #14213d;
-            border-bottom: 2px solid #fca311;
-            padding-top: 5px;
-            text-align: center;
-            background-color: #fca311;
-            box-shadow: 0 0 5px #000000;
-        }
-        a:link {
-            color: blue;
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:hover {
-            color: red;
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:active {
-            color: yellow;
-            background-color: transparent;
-            text-decoration: none;
-        }
-        .fa:hover {
-            opacity: 0.9;
-        }
-        .fa-linkedin {
-            background: #007bb5;
-            color: blue;
-            font-size: 0.8em;
-        }
-        .fa-github {
-            background: #007bb5;
-            color: blue;
-            font-size: 0.8em;
-        }
-        .navigation {
-            width: 100%;
-            height: 30px;
-            display: block;
-            padding: 8px;
-            background-color: #14213d;
-            box-shadow: 0 0 5px #000000;
-            font-size: 1.8em;
-            color: #fca311;
-            text-align: center;
-        }
-        .navigation a:link {
-            color: #fca311;
-            text-decoration: none;
-        }
-        .navigation a:visited {
-            color: #fca311;
-            text-decoration: none;
-        }
-        .navigation a:hover {
-            color: blue;
-            text-decoration: none;
-        }
-        input[type=text] {
-            background-color: #14213d;
-            color: #fca311;
-        }
-        input[type=email] {
-            background-color: #14213d;
-            color: #fca311;
-        }
-        input[type=button], input[type=submit], input[type=reset], textarea[id=message] {
-            background-color: #14213d;
-            border: 1px solid #fca311;
-            color: #fca311;
-            padding: 16px 32px;
-            text-decoration: none;
-            margin: 4px 2px;
-            cursor: pointer;
-            transition: width 0.4s ease-in-out;
-       }
-        button {
-            background-color: #14213d;
-            border: 1px solid #fca311;
-            color: #fca311;
-            padding: 16px 32px;
-            text-decoration: none;
-            margin: 4px 2px;
-            cursor: pointer;
-       }
-       form {
-        text-align: center;
-       }
-       input[type=text]:focus, input[type=email]:focus, textarea[id=message]:focus, input[id=cname]:focus, input[type=date]:focus {
-            width: 50%;
-            border: 1px solid #fca311;
-       }
-    </style>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/files/cyber4.ico">
+
+    <title>Contact Andrew Ingram - Cybersecurity Specialist | Interview Requests</title>
 </head>
+
 <body>
+    <!-- Skip to Content for Accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <div class="container">
-        <div class="header">
-            <h1 class="name-header" alt="security">Andrew Jay Ingram</h1>
+        <header class="header">
+            <h1>Andrew Jay Ingram</h1>
             <h3>Cybersecurity Specialist - Cincinnati Ohio</h3>
-            <p><b>Email:</b> <a href=mailto:aingram702@pm.me>aingram702@pm.me</a> <b> | Phone:</b> <a href="tel:+15132766611">(513) 276-6611</a></p>
-            <p><b>Github:</b> <a href="https://github.com/aingram702" class="fa fa-github">aingram702</a> <b>| Linked</b><a href="https://linkedin.com/in/andrew-ingram-702" class="fa fa-linkedin">: andrew-ingram-702</a></p>
-        </div>
-        <nav class="navigation">
-            <a href="index.html" class="nav1">CoverLetter</a> |
-            <a href="resume.html" class="nav2">Resume</a> |
-            <a href="badges.html" class="nav3">Achievements</a> |
-            <a href="form.html">Queries</a>
+            <p><b>Email:</b> <a href="mailto:aingram702@pm.me">aingram702@pm.me</a> <b>| Phone:</b> <a
+                    href="tel:+15132766611">(513) 276-6611</a></p>
+            <p><b>Github:</b> <a href="https://github.com/aingram702" class="fa fa-github"
+                    aria-label="GitHub Profile">aingram702</a> <b>| Linked</b><a
+                    href="https://linkedin.com/in/andrew-ingram-702" class="fa fa-linkedin"
+                    aria-label="LinkedIn Profile">: andrew-ingram-702</a></p>
+        </header>
+
+        <nav class="navigation" role="navigation" aria-label="Main navigation">
+            <a href="index.html">CoverLetter</a> |
+            <a href="resume.html">Resume</a> |
+            <a href="badges.html">Achievements</a> |
+            <a href="form.html" class="active" aria-current="page">Queries</a>
         </nav>
-        <div class="section profile" style="background-color: #fca311; color: #14213d; box-shadow: 0 0 5px #000000;">
-            <h2>Queries </h2>
-            <p style="text-align: center; font-size: 1.2em;">To schedule an interview please fill out the form below</p>
-            <form action="send_email.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
- 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-                <br>
+        <main id="main-content">
+            <div class="section profile">
+                <h2>Queries</h2>
+                <p class="text-center text-lg">To schedule an interview please fill out the form below</p>
 
-                <label for="cname">Company Name:</label>
-                <input type="text" id="cname" name="cname" required>
-                <br>
+                <!-- Formspree Integration - Free service for static sites -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <label for="name">Name: <span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true">
 
-                <label for="idate">Date Available for Interview:</label>
-                <input type="date" id="idate" name="idate" required>
+                    <label for="email">Email Address: <span aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+
+                    <label for="subject">Subject: <span aria-label="required">*</span></label>
+                    <input type="text" id="subject" name="subject" required aria-required="true">
+
+                    <label for="cname">Company Name: <span aria-label="required">*</span></label>
+                    <input type="text" id="cname" name="cname" required aria-required="true">
+
+                    <label for="idate">Date Available for Interview: <span aria-label="required">*</span></label>
+                    <input type="date" id="idate" name="idate" required aria-required="true">
+
+                    <label for="message">Message: <span aria-label="required">*</span></label>
+                    <textarea id="message" name="message" required aria-required="true"></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <!-- Instructions for Formspree -->
+            <p class="text-center">
+                <strong>Note:</strong> To activate this contact form:
                 <br>
- 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                1. Visit <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">formspree.io</a>
                 <br>
- 
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <p style="text-align: center">This Contact Us form is not functioning yet. It's a work in progress. This text will be removed when it is functioning.</p> 
-        <p style="text-align: center">Until then, just email me at <a href="mailto:aingram702@pm.me">aingram702@pm.me<a/></p>
-        <p style="text-align: center">--Andrew Ingram</p>
+                2. Sign up with your email (free tier available)
+                <br>
+                3. Create a new form and get your unique form ID
+                <br>
+                4. Replace "YOUR_FORM_ID" in the form action with your actual ID
+                <br>
+                5. Forms will be sent directly to your email!
+            </p>
+
+            <p class="text-center">Until then, email me directly at <a
+                    href="mailto:aingram702@pm.me">aingram702@pm.me</a></p>
+            <p class="text-center">--Andrew Ingram</p>
+        </main>
     </div>
+
+    <footer>
+        <div>
+            <script src="https://tryhackme.com/badge/13067"></script>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+    <!-- Back to Top Script -->
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        backToTopButton.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
 </body>
-<footer>
-    <div><script src="https://tryhackme.com/badge/13067"></script></div>
-</footer>
+
 </html>

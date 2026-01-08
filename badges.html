@@ -1,483 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name=‘robots’ content=‘noindex, nofollow'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='robots' content='noindex, nofollow'>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Andrew Ingram's cybersecurity training achievements and badges from Immersive Labs, TryHackMe, and other platforms. Over 1437+ labs completed.">
+    <meta name="keywords"
+        content="cybersecurity badges, training achievements, Immersive Labs, TryHackMe, certifications">
+    <meta name="author" content="Andrew Jay Ingram">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aingram702.github.io/badges.html">
+    <meta property="og:title" content="Andrew Ingram - Cybersecurity Training Achievements">
+    <meta property="og:description"
+        content="Over 1437+ cybersecurity labs completed across multiple training platforms">
+    <meta property="og:image" content="https://aingram702.github.io/files/cyber4.ico">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Andrew Ingram - Training Achievements">
+    <meta name="twitter:description" content="Cybersecurity training achievements and badges">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="/files/cyber4.ico">
     <script src="https://kit.fontawesome.com/f53103e36b.js" crossorigin="anonymous"></script>
-    <title>Cybersecurity Achievements</title>
-    <style>
-        body {
-            font-family: "Audiowide", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fca311;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #e5e5e5;
-            padding: 20px;
-            box-shadow: 0 0 10px #000000;
-        }
-        .container h3 {
-            color: #14213d;
-            padding-bottom: 2px;
-            padding-top: 2px;
-            text-align: center;
-            background-color: #fca311;
-            box-shadow: 0 0 10px #000000;
-        }
-        .container p {
-            color: #14213d;
-        }
-        .header {
-            text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #fca311;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #14213d;
-        }
-        .header h4 {
-            color:#14213d;
-            margin:0;
-        }
-        .header p {
-            font-size: 1.2em;
-            color: #14213d;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            font-size: 1.8em;
-            color: #14213d;
-            border-bottom: 2px solid #fca311;
-            padding-top: 5px;
-            text-align: center;
-            background-color: #fca311;
-            box-shadow: 0 0 5px #000000;
-        }
-        .section h4 {
-            font-size: 1.2em;
-            color: #14213d;
-            border-bottom: 2px solid #fca311;
-            padding-top: 5px;
-            text-align: center;
-            background-color: #fca311;
-            box-shadow: 0 0 5px #000000;
-        }
-        .section iframe {
-            border: 4px solid #fca311;
-            box-shadow: 0 0 2px #fca311;
-        }
-        .section td {
-            border-top: 1px solid #000000;
-            border-bottom: 1px solid #000000;
-            border-left: 1px solid #000000;
-            border-right: 1px solid #000000;
-            background-color: #14213d;
-            color: #fca311;
-            text-align: center;
-        }
-        .section th {
-            background-color: #fca311;
-            border-top: 1px solid #000000;
-            border-bottom: 1px solid #000000;
-            border-left: 1px solid #000000;
-            border-right: 1px solid #000000;
-        }
-        .section table {
-            width: 100%;
-            font-size: 14px;
-        }
-        .profile p {
-            color:#14213d;
-        }
-        a:link {
-            color: blue;
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:hover {
-            color: red;
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:active {
-            color: yellow;
-            background-color: transparent;
-            text-decoration: none;
-        }
-        .fa:hover {
-            opacity: 0.9;
-        }
-        .fa-linkedin {
-            background: #007bb5;
-            color: blue;
-            font-size: 0.8em;
-        }
-        .fa-github {
-            background: #007bb5;
-            color: blue;
-            font-size: 0.8em;
-        }
-        .navigation {
-            width: 100%;
-            height: 30px;
-            display: block;
-            padding: 8px;
-            background-color: #14213d;
-            box-shadow: 0 0 5px #000000;
-            font-size: 1.8em;
-            color: #fca311;
-            text-align: center;
-        }
-        .navigation a:link {
-            color: #fca311;
-            text-decoration: none;
-        }
-        .navigation a:visited {
-            color: #fca311;
-            text-decoration: none;
-        }
-        .navigation a:hover {
-            color: blue;
-            text-decoration: none;
-        }
-    </style>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/files/cyber4.ico">
+
+    <title>Andrew Ingram - Cybersecurity Training Achievements & Badges</title>
 </head>
+
 <body>
+    <!-- Skip to Content for Accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <div class="container">
-        <div class="header">
+        <header class="header">
             <h1>Andrew Jay Ingram</h1>
             <h3>Cybersecurity Specialist - Cincinnati Ohio</h3>
-            <p><b>Email:</b> <a href=mailto:aingram702@pm.me>aingram702@pm.me</a> <b> | Phone:</b> <a href="tel:+15132766611">(513) 276-6611</a></p>
-            <p><b>Github:</b> <a href="https://github.com/aingram702" class="fa fa-github">aingram702</a> <b>| Linked</b><a href="https://linkedin.com/in/andrew-ingram-702" class="fa fa-linkedin">: andrew-ingram-702</a></p>
-        </div>
-        <nav class="navigation">
+            <p><b>Email:</b> <a href="mailto:aingram702@pm.me">aingram702@pm.me</a> <b>| Phone:</b> <a
+                    href="tel:+15132766611">(513) 276-6611</a></p>
+            <p><b>Github:</b> <a href="https://github.com/aingram702" class="fa fa-github"
+                    aria-label="GitHub Profile">aingram702</a> <b>| Linked</b><a
+                    href="https://linkedin.com/in/andrew-ingram-702" class="fa fa-linkedin"
+                    aria-label="LinkedIn Profile">: andrew-ingram-702</a></p>
+        </header>
+
+        <nav class="navigation" role="navigation" aria-label="Main navigation">
             <a href="index.html">CoverLetter</a> |
             <a href="resume.html">Resume</a> |
-            <a href="badges.html">Achievements</a> |
+            <a href="badges.html" class="active" aria-current="page">Achievements</a> |
             <a href="form.html">Queries</a>
         </nav>
-        <div class="section profile" style="background-color: #fca311; color: #14213d; box-shadow: 0 0 5px #000000;">
-            <h2>Training Achievements</h2>
-            <h4>Immersive Labs Badges Earned</h4>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Badge</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Cyber Fundamentals</td>
-                    <td><img src="files/IML/Cyber-Fundamentals.png" alt="Cyber Fundamentals" width="200"></td>
-                    <td>This role is for anyone who is new to cybersecurity or has recently started their cybersecurity career. It will ensure you have the basics you need to succeed.</td>
-                </tr>
-                <tr>
-                    <td>Threat Hunter - Beginner</td>
-                    <td><img src="files/IML/Threat-Hunter-Beginner.png" alt="Threat Hunter - Beginner" width="200"></td>
-                    <td>This role is for those new to cyber threat intelligence (CTI) and novice threat hunters. It also supports anyone looking to gain knowledge and develop skills in CTI, threat research, breaches, and threat actors.</td>
-                </tr>
-                <tr>
-                    <td>Security Hygeine</td>
-                    <td><img src="files/IML/Security-Hygeine.png" alt="Security Hygeine" width="200"></td>
-                    <td>This introductory pathway is designed for a general audience and covers the key elements of protecting yourself online, both at work and at home. Everyone has a role to play in keeping themselves and their organization secure. Are you ready to be a security hero?</td>
-                </tr>
-                <tr>
-                    <td>Management, Risk, and Compliance</td>
-                    <td><img src="files/IML/Management,Risk,and-Compliance.png" alt="Management, Risk, and Compliance" width="200"></td>
-                    <td>This role is for anyone who deals with risk and compliance in cybersecurity.</td>
-                </tr>
-                <tr>
-                    <td>Technical Fundamentals</td>
-                    <td><img src="files/IML/Technical Fundamentals.png" alt="Technical Fundamentals" width="200"></td>
-                    <td>This role is for anyone who is new to cybersecurity or has recently started their cybersecurity career. It will ensure you have the technical essentials required to succeed.</td>
-                </tr>
-                <tr>
-                    <td>Introduction to Digital Forensics</td>
-                    <td><img src="files/IML/Introduction-to-Digital-Forensics.png" alt="Introduction to Digital Forensics" width="200"></td>
-                    <td>This pathway introduces topics that junior digital forensics analysts and incident responders will encounter, from the digital process and ethics to security and incident response fundamentals. Topics include many of those in FOR308.</td>
-                </tr>
-                <tr>
-                    <td>Social Engineering</td>
-                    <td><img src="files/IML/Social-Engineering.png" alt="Social Engineering" width="200"></td>
-                    <td>This collection explores the topic of social engineering. It covers what social engineering is, the tactics and techniques commonly used to persuade us to click on malicious links or part with information, and how you can protect yourself from falling victim to social engineering.</td>
-                </tr>
-                <tr>
-                    <td>Ethics & Laws</td>
-                    <td><img src="files/IML/Ethic-and-Laws.png" alt="Ethics & Laws" width="200"></td>
-                    <td>This skillset covers some of the legal and ethical challenges you may come across in cybersecurity. Make sure you’re staying on the right side of the law by learning about bug bounty programs and the limits of ethical hacking.</td>
-                </tr>
-                <tr>
-                    <td>Wireshark</td>
-                    <td><img src="files/IML/Wireshark.png" alt="Wireshark" width="200"></td>
-                    <td>Want to examine exactly what’s happening in your network? Wireshark is the tool for the job! This series will guide you through the basics of Wireshark and how to take full advantage of its functionalities and features, so you can learn more about the data traveling through your network.</td>
-                </tr>
-                <tr>
-                    <td>MITRE ATT&CK</td>
-                    <td><img src="files/IML/MITRE-ATT&CK.png" alt="MITRE ATT&CK" width="200"></td>
-                    <td>The MITRE ATT&CK framework is a matrix of tactics and techniques used by attackers. It provides a key source of information for building threat models and defensive methodologies to better classify attacks and assess risk.</td>
-                </tr>
-                <tr>
-                    <td>Ransomware</td>
-                    <td><img src="files/IML/Ransomware.png" alt="Ransomware" width="200"></td>
-                    <td>Ransomware has come a long way since the 1980s. It's now one of the biggest threats to companies and has been the end goal of countless breaches in recent years. In this series you will learn about the different strains of ransomware and how they operate.</td>
-                </tr>
-                <tr>
-                    <td>Nmap</td>
-                    <td><img src="files/IML/Nmap.png" alt="Nmap" width="200"></td>
-                    <td>Nmap is one of the most popular network scanner tools available. In this introductory series, you will learn what Nmap is and how to use it to enumerate for hosts, ports, and services on a target. You’ll also explore Nmap features such as NSE and various outputting formats, as well as how to optimize your scans to maximise your results and identify potentially vulnerable targets.</td>
-                </tr>
-                <tr>
-                    <td>Nessus</td>
-                    <td><img src="files/IML/Nessus.png" alt="Nessus" width="200"></td>
-                    <td>Nessus is a vulnerability assessment scanner developed by Tenable Network Security to identify vulnerabilities in systems and applications. In this series, you'll explore Nessus, and learn how to scan different types of host using Nessus. You'll also learn about the different types of scans available with Nessus, as well as how to analyze the results from the tool.</td>
-                </tr>
-                <tr>
-                    <td>Autopsy</td>
-                    <td><img src="files/IML/Autopsy.png" alt="Autopsy" width="200"></td>
-                    <td>Autopsy is an open-source digital forensics tool used by law enforcement, the military, and within the private sector worldwide. Get to grips with the ins and outs of Autopsy in this skill series and learn how to investigate cybercrime.</td>
-                </tr>
-                <tr>
-                    <td>Splunk</td>
-                    <td><img src="files/IML/Splunk.png" alt="Splunk" width="200"></td>
-                    <td>Splunk is a software platform used to analyze, search, investigate and visualize machine-generated data collected from websites, applications, devices and more. In this series, we will explore the tool and its features, alongside how to use it for data analysis.</td>
-                </tr>
-                <tr>
-                    <td>Elastic Playground</td>
-                    <td><img src="files/IML/Elastic-Playground.png" alt="Elastic Playground" width="200"></td>
-                    <td>This unique collection offers you the opportunity to interact with a fully functional Elastic instance, loaded with a diverse range of data types. You'll get to experiment, manipulate, and analyze different data sets, providing a comprehensive understanding of Elastic's capabilities. Whether you're a beginner or an experienced user, this collection will enhance your skills and deepen your understanding of Elastic's versatility in handling various data types. Dive in and start your journey of discovery with Elastic.</td>
-                </tr>
-                <tr>
-                    <td>Elastic Stack</td>
-                    <td><img src="files/IML/Elastic-Stack.png" alt="Elastic Stack" width="200"></td>
-                    <td>The Elastic Stack is a three-layered stack of open-source tools that, when fully assembled, allows users to analyze data from any type of source and in any format. This skill series will guide you through the Elastic Stack's simple yet sophisticated beats and dashboards for professional and efficient log analysis.</td>
-                </tr>
-                <tr>
-                    <td>Elastic Data Ingest</td>
-                    <td><img src="files/IML/Elastic-Data-Ingest.png" alt="Elastic Data Ingest" width="200"></td>
-                    <td>In this collection, you will learn about Elastic Beat integrations and how they enable real-time data collection, processing, and analysis. You will gain hands-on experience with logs and test your analysis skills using Kibana and several default dashboards.</td>
-                </tr>
-                <tr>
-                    <td>OWASP Top 10</td>
-                    <td><img src="files/IML/OWASP-Top-10.png" alt="OWASP Top 10" width="200"></td>
-                    <td>This series gives an overview of the OWASP Top 10. This includes an introduction to the list as well as a high-level coverage of the current list.</td>
-                </tr>
-                <tr>
-                    <td>Packet Analysis</td>
-                    <td><img src="files/IML/Packet-Analysis.png" alt="Packet Analysis" width="200"></td>
-                    <td>Reading packets and understanding the structure of packet captures are essential skills in cybersecurity. This series will introduce the main packet analysis tools and how to look for flags inside packet headers.</td>
-                </tr>
-                <tr>
-                    <td>Introducing the Cyber Kill Chain</td>
-                    <td><img src="files/IML/Introduction-to-Cyber-Kill-Chain-LHM.png" alt="Introducing the Cyber Kill Chain" width="200"></td>
-                    <td>The cyber kill chain is a cybersecurity model developed in 2011 by Lockheed Martin. It's a phase-based model that's often used to understand and dissect an adversarial attack structure. In this series, we'll explore each phase of the cyber kill chain and its significance.</td>
-                </tr>
-                <tr>
-                    <td>The Cyber Kill Chain</td>
-                    <td><img src="files/IML/The-Cyber-Kill-Chain.png" alt="The Cyber Kill Chain" width="200"></td>
-                    <td>This series will walk you through each of the seven steps of the Cyber Kill Chain, exploring a specific attack scenario. You’ll learn the tools and techniques used by defenders to analyze an attack.</td>
-                </tr>
-                <tr>
-                    <td>Introduction to Velociraptor</td>
-                    <td><img src="files/IML/Introduction-to-Velociraptor.png" alt="Introduction to Velociraptor" width="200"></td>
-                    <td>Velociraptor is a powerful digital forensic tool that enables investigators to quickly triage and analyze live systems. It is designed to be run on a live system, rather than a forensic image, and allows for the collection of volatile data, the identification of suspicious processes, the creation of memory dumps, and more. This makes it particularly useful for incident response, where time is of the essence and quick identification of malicious activity is critical.</td>
-                </tr>
-                <tr>
-                    <td>SUNBURST Supply Chain Compromise</td>
-                    <td><img src="files/IML/SUNBURST-Supply-Chain-Compromise.png" alt="SUNBURST Supply Chain Compromise" width="200"></td>
-                    <td>In December 2020, FireEye identified that the SolarWinds Orion software package had been compromised by a nation-state. This was subsequently installed onto the devices of several thousand organizations, leading to potential compromise. This series takes a closer look at the malware implants, the APT operators and some of their TTPS.</td>
-                </tr>
-                <tr>
-                    <td>Active Directory Basics</td>
-                    <td><img src="files/IML/Active-Directory-Basics.png" alt="Active Directory Basics" width="200"></td>
-                    <td>Active Directory (AD) is a Microsoft technology designed for network management. This introductory collection will guide you through what AD is, how it’s structured, and its functionalities. You'll learn how to navigate the Active Directory Users and Groups console, effectively manage users, groups, and organizational units within a domain, and how to add a workstation to a domain. You will also explore key AD topics such as the distinction between NTLM and Kerberos, group policy management, the mechanism of AD replication, and the intricacies of managing domain-joined machines. This collection is your gateway to mastering the essentials of Active Directory.</td>
-                </tr>
-                <tr>
-                    <td>CTI First Principles</td>
-                    <td><img src="files/IML/CTI-First-Principles.png" alt="CTI First Principles" width="200"></td>
-                    <td>Cyber Threat Intelligence is a discipline that is growing in both scale and relevance to cybersecurity. It involves proactively identifying and reporting on threats to an organization. In this collection, you can expect to learn about the fundamentals of intelligence, threat actors, and creating and testing hypotheses.</td>
-                </tr>
-                <tr>
-                    <td>Introduction to Cryptography</td>
-                    <td><img src="files/IML/Introduction-to-Cryptography.png" alt="Introduction to Cryptography" width="200"></td>
-                    <td>This series is aimed at all skill levels, in it you'll learn about the foundation concepts behind cryptography.</td>
-                </tr>
-                <tr>
-                    <td>NIST – Guidelines on Security and Privacy in Public Cloud Computing (800-144)</td>
-                    <td><img src="files/IML/NIST-Guidelines-on-Public-Cloud-Computing.png" alt="NIST – Guidelines on Security and Privacy in Public Cloud Computing (800-144)" width="200"></td>
-                    <td>Guidance time! This series covers the US’s National Institute of Standards and Technology Guidelines on Security and Privacy in Public Cloud Computing.</td>
-                </tr>
-                <tr>
-                    <td>NIST – Security and Privacy Controls for Information Systems and Organizations (800-53)</td>
-                    <td><img src="files/IML/NIST-Security-and-Privacy-Controls.png" alt="NIST – Security and Privacy Controls for Information Systems and Organizations (800-53)" width="200"></td>
-                    <td>NIST Special Publication 800-53 outlines protective measures for the security and privacy of organizations, systems, and individuals.</td>
-                </tr>
-                <tr>
-                    
-                    <td>Introduction to Penetration Testing</td>
-                    <td><img src="files/IML/Introduction-to-Pentesting.png" alt="Introduction to Penetration Testing" width="200"></td>
-                    <td>This series will look at penetration testing concepts and give the introductory notions needed to start exploring the field. These labs are theoretical and do not require any practical skills.</td>
-                </tr>
-                <tr>
-                    <td>Introduction to Windows Exploitation</td>
-                    <td><img src="files/IML/Introduction-to-Windows-Exploitation.png" alt="Introduction to Windows Exploitation" width="200"></td>
-                    <td>Windows exploitation is an advanced practice that takes time and commitment to learn properly. In this series, we will explore the condition of the Windows exploitation market, the most common types of Windows vulnerabilities, alongside their function and impact, useful terminology surrounding the topic, and our recommended pre-requisite knowledge before starting the practical series of full Windows exploitation.</td>
-                </tr>
-                <tr>
-                    <td>Linux Command Line</td>
-                    <td><img src="files/IML/Linux-Command-Line.png" alt="Linux Command Line" width="200"></td>
-                    <td>Learn how to use the Linux Command Line Interface (CLI) and how it can be used to perform different tasks. The labs in this skills series range from navigating around a file structure to combining multiple commands to achieve a specific goal.</td>
-                </tr>
-                <tr>
-                    <td>Introduction to Linux Exploitation</td>
-                    <td><img src="files/IML/Introduction-to-Linux-Exploitation.png" alt="Introduction to Linux Exploitation" width="200"></td>
-                    <td>Linux exploitation can be a daunting field to step into, with a steep list of knowledge prerequisites needed for some of the most basic vulnerabilities. In this series, you’ll gain foundational knowledge on Linux-based software exploitation, learning about the fundamental concepts, how the exploit development process works, and commonly used tools.</td>
-                </tr>
-                <tr>
-                    <td>Scanning</td>
-                    <td><img src="files/IML/Scanning.png" alt="Scanning" width="200"></td>
-                    <td>Scanning is a crucial element of a penetration test as the information gained from a scan directly affects the way a tester approaches the rest of their attack. Learn all about pen test scanning in this skill series.</td>
-                </tr>
-                <tr>
-                    <td>Data Privacy</td>
-                    <td><img src="files/IML/Data-Privacy.png" alt="Data Privacy" width="200"></td>
-                    <td>This collection provides an introduction to key data privacy concepts and regulations and how they apply to individuals.</td>
-                </tr>
-                <tr>
-                    <td>Data Handling</td>
-                    <td><img src="files/IML/Data-Handling.png" alt="Data Handling" width="200"></td>
-                    <td>Data is now a part of everyone's everyday lives. Learning about data handling is essential for everyone in today's digital age. It helps you understand how to protect your personal information and maintain online privacy. By learning how to handle data properly, you can avoid scams, identity theft, and other cybercrimes. It also empowers you to make informed decisions about securely sharing your data and using online services. Additionally, data handling knowledge can benefit the organization you work for, as you can maintain the security and integrity of its data, helping to prevent data breaches and protect sensitive information. These introductory labs provide a strong foundation for the concept of data handling.</td>
-                </tr>
-                <tr>
-                    <td>Digital Footprint</td>
-                    <td><img src="files/IML/Digital-Footprint.png" alt="Digital Footprint" width="200"></td>
-                    <td>This collection explores the topic of digital footprints. It covers what they are, how they pose risks to you and your organization, well-known cases where digital footprints have been used for criminal activities, and how to protect yourself.</td>
-                </tr>
-                <tr>
-                    <td>Physical Security</td>
-                    <td><img src="files/IML/Physical-Security.png" alt="Physical Security" width="200"></td>
-                    <td>This collection explores what physical security is, its risks to you and your organization, and how malicious actors exploit poor physical security practices. It also covers the measures you can take to protect yourself and your organization when working remotely and in your office.</td>
-                </tr>
-                <tr>
-                    <td>Windows Concepts</td>
-                    <td><img src="files/IML/Windows-Concepts.png" alt="Windows Concepts" width="200"></td>
-                    <td>This series provides hands-on access to Windows OS, looking at registry access, alternate data streams, and system variables in a safe environment. With a greater understanding of security controls within Windows, you will be able to identify and exploit weaknesses.</td>
-                </tr>
-                <tr>
-                    <td>Human Factors in Cybersecurity</td>
-                    <td><img src="files/IML/Human-Factors-in-Cybersecurity.png" alt="Human Factors in Cybersecurity" width="200"></td>
-                    <td>People are the “weakest link”. It’s the standard narrative across cybersecurity as the role of human factors is often misunderstood. In this collection, you will explore the role of human factors in cybersecurity and how you can make people your strongest defense.</td>
-                </tr>
-                <tr>
-                    <td>AI Fundamentals</td>
-                    <td><img src="files/IML/AI-Fundamentals.png" alt="AI Fundamentals" width="200"></td>
-                    <td>In recent years, artificial intelligence (AI) has become an increasingly important tool in various fields, including healthcare, financial services, and cybersecurity. In this collection, you'll explore the fascinating world of AI, including some of the broader terms that surface when you read about AI, from machine learning to deep learning and neural networks.</td>
-                </tr>
-                <tr>
-                    <td>Hack Your First Computer</td>
-                    <td><img src="files/IML/Hack-Your-First-Computer.png" alt="Hack Your First Computer" width="200"></td>
-                    <td>This series will place you in your first Red Team, performing your first exercise. You will be given guided instructions to compromise a computer. Your first hack!</td>
-                </tr>
-                <tr>
-                    <td>Cyber 101</td>
-                    <td><img src="files/IML/Cyber-101.png" alt="Cyber 101" width="200"></td>
-                    <td>This skill series provides a strong cybersecurity knowledge base to anyone starting out in the industry. We’ll take you through the core concepts of cybersecurity and how to stay secure online.</td>
-                </tr>
-                <tr>
-                    <td>Cyber Safety</td>
-                    <td><img src="files/IML/Cyber-Safety.png" alt="Cyber Safety" width="200"></td>
-                    <td>Get to grips with all things cyber! Everything you need to know about the cyber world is covered here.</td>
-                </tr>
-                <tr></tr>
-                    <td>Staying Safe Online</td>
-                    <td><img src="files/IML/Staying-Safe-Online.png" alt="Staying Safe Online" width="200"></td>
-                    <td>A company is only as secure as its people! In this skill series, you’ll learn everything required to keep both you and your company safe online.</td>
-                </tr>
-                <tr>
-                    <td>Compliance</td>
-                    <td><img src="files/IML/Compliance.png" alt="Compliance" width="200"></td>
-                    <td>Having compliance standards in place can help keep an enterprise running. Without them valuable information can be left exposed, creating serious vulnerabilities. By the end of this skill series you will be up to speed on essential compliance standards and policies.</td>
-                </tr>
-                <tr>
-                    <td>OT Fundamentals</td>
-                    <td><img src="files/IML/OT-Fundamentals.png" alt="OT Fundamentals" width="200"></td>
-                    <td>Operation Technology (OT) is a term that covers the hardware and software for Industrial Control Systems or other physical systems. This collection will teach you the fundamental terminology and application of frameworks that differentiate IT and OT systems before taking a deeper look at Incident Response strategy in OT environments.</td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <br>
-            <h4>TryHackMe Badges Earned</h4>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Badge</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Intro to Pentesting</td>
-                    <td><img src="files/intro-to-pentesting.jpg" alt="Intro to Pentesting" width="200"></td>
-                    <td>Become familiar with the principles of pentesting.</td>
-                </tr>
-                <tr>
-                    <td>Pentesting Tools</td>
-                    <td><img src="files/pentestertools.jpg" alt="Pentesting Tools" width="200"></td>
-                    <td>Become familiar with tools used for pentesting.</td>
-                </tr>
-                <tr>
-                    <td>Intro to Web Hacking</td>
-                    <td><img src="files/intro-to-web-hacking.jpg" alt="Intro to Web Hacking" width="200"></td>
-                    <td>Become familiar with the basic principles and techniques of web hacking.</td>
-                </tr>
-                <tr>
-                    <td>ELKsquisite</td>
-                    <td><img src="files/elksquisite.jpg" alt="Elksquisite" width="200"></td>
-                    <td>Completed the Slingshot challenge focused on advanced ELK stack usage.</td>
-                </tr>
-                <tr>
-                    <td>Blue</td>
-                    <td><img src="files/blue.jpg" alt="Blue" width="200"></td>
-                    <td>Exploit a server using EternalBlue exploit kit and POC.</td>
-                </tr>
-                <tr>
-                    <td>Hash Cracker</td>
-                    <td><img src="files/hash-cracker.jpg" alt="Hash Cracker" width="200"></td>
-                    <td>Become proficient in cracking hashes of all kinds. MD5, SHA1, SHA256, and more.</td>
-                </tr>
-                <tr>
-                    <td>OhSINT</td>
-                    <td><img src="files/OhSINT.jpg" alt="OhSINT" width="200"></td>
-                    <td>Conduct an OSINT investigation using open-source intelligence techniques and tools.</td>
-                </tr>
-                <tr>
-                    <td>Network Fundamentals</td>
-                    <td><img src="files/network-fundamentals.jpg" alt="Network Fundamentals" width="200"></td>
-                    <td>Completed the Networking Fundamentals module.</td>
-                </tr>
-                <tr>
-                    <td>Wireshark</td>
-                    <td><img src="files/wireshark.jpg" alt="Wireshark" width="200"></td>
-                    <td>Become familiar with advanced Wireshark techniques and decrypt a TLS encrypted password.</td>
-                </tr>
-                <tr>
-                    <td>Linux Privilege Escalation</td>
-                    <td><img src="files/linux-privesc.jpg" alt="Linux Privesc" width="200"></td>
-                    <td>Learn multiple techniques to escalate privileges on a Linux server.</td>
-                </tr>
-            </table>
-        </div>
+
+        <main id="main-content">
+            <div class="section profile">
+                <h2>Training Achievements</h2>
+                <h4>Immersive Labs Badges Earned</h4>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Badge</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Cyber Fundamentals</td>
+                        <td><img src="files/IML/Cyber-Fundamentals.png" alt="Cyber Fundamentals Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This role is for anyone who is new to cybersecurity or has recently started their
+                            cybersecurity career. It will ensure you have the basics you need to succeed.</td>
+                    </tr>
+                    <tr>
+                        <td>Threat Hunter - Beginner</td>
+                        <td><img src="files/IML/Threat-Hunter-Beginner.png" alt="Threat Hunter Beginner Badge"
+                                width="200" loading="lazy"></td>
+                        <td>This role is for those new to cyber threat intelligence (CTI) and novice threat hunters. It
+                            also supports anyone looking to gain knowledge and develop skills in CTI, threat research,
+                            breaches, and threat actors.</td>
+                    </tr>
+                    <tr>
+                        <td>Security Hygeine</td>
+                        <td><img src="files/IML/Security-Hygeine.png" alt="Security Hygeine Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This introductory pathway is designed for a general audience and covers the key elements of
+                            protecting yourself online, both at work and at home. Everyone has a role to play in keeping
+                            themselves and their organization secure. Are you ready to be a security hero?</td>
+                    </tr>
+                    <tr>
+                        <td>Management, Risk, and Compliance</td>
+                        <td><img src="files/IML/Management,Risk,and-Compliance.png"
+                                alt="Management, Risk, and Compliance Badge" width="200" loading="lazy"></td>
+                        <td>This role is for anyone who deals with risk and compliance in cybersecurity.</td>
+                    </tr>
+                    <tr>
+                        <td>Technical Fundamentals</td>
+                        <td><img src="files/IML/Technical Fundamentals.png" alt="Technical Fundamentals Badge"
+                                width="200" loading="lazy"></td>
+                        <td>This role is for anyone who is new to cybersecurity or has recently started their
+                            cybersecurity career. It will ensure you have the technical essentials required to succeed.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Digital Forensics</td>
+                        <td><img src="files/IML/Introduction-to-Digital-Forensics.png"
+                                alt="Introduction to Digital Forensics Badge" width="200" loading="lazy"></td>
+                        <td>This pathway introduces topics that junior digital forensics analysts and incident
+                            responders will encounter, from the digital process and ethics to security and incident
+                            response fundamentals. Topics include many of those in FOR308.</td>
+                    </tr>
+                    <tr>
+                        <td>Social Engineering</td>
+                        <td><img src="files/IML/Social-Engineering.png" alt="Social Engineering Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This collection explores the topic of social engineering. It covers what social engineering
+                            is, the tactics and techniques commonly used to persuade us to click on malicious links or
+                            part with information, and how you can protect yourself from falling victim to social
+                            engineering.</td>
+                    </tr>
+                    <tr>
+                        <td>Ethics & Laws</td>
+                        <td><img src="files/IML/Ethic-and-Laws.png" alt="Ethics and Laws Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This skillset covers some of the legal and ethical challenges you may come across in
+                            cybersecurity. Make sure you're staying on the right side of the law by learning about bug
+                            bounty programs and the limits of ethical hacking.</td>
+                    </tr>
+                    <tr>
+                        <td>Wireshark</td>
+                        <td><img src="files/IML/Wireshark.png" alt="Wireshark Badge" width="200" loading="lazy"></td>
+                        <td>Want to examine exactly what's happening in your network? Wireshark is the tool for the job!
+                            This series will guide you through the basics of Wireshark and how to take full advantage of
+                            its functionalities and features, so you can learn more about the data traveling through
+                            your network.</td>
+                    </tr>
+                    <tr>
+                        <td>MITRE ATT&CK</td>
+                        <td><img src="files/IML/MITRE-ATT&CK.png" alt="MITRE ATT&CK Badge" width="200" loading="lazy">
+                        </td>
+                        <td>The MITRE ATT&CK framework is a matrix of tactics and techniques used by attackers. It
+                            provides a key source of information for building threat models and defensive methodologies
+                            to better classify attacks and assess risk.</td>
+                    </tr>
+                    <tr>
+                        <td>Ransomware</td>
+                        <td><img src="files/IML/Ransomware.png" alt="Ransomware Badge" width="200" loading="lazy"></td>
+                        <td>Ransomware has come a long way since the 1980s. It's now one of the biggest threats to
+                            companies and has been the end goal of countless breaches in recent years. In this series
+                            you will learn about the different strains of ransomware and how they operate.</td>
+                    </tr>
+                    <tr>
+                        <td>Nmap</td>
+                        <td><img src="files/IML/Nmap.png" alt="Nmap Badge" width="200" loading="lazy"></td>
+                        <td>Nmap is one of the most popular network scanner tools available. In this introductory
+                            series, you will learn what Nmap is and how to use it to enumerate for hosts, ports, and
+                            services on a target. You'll also explore Nmap features such as NSE and various outputting
+                            formats, as well as how to optimize your scans to maximise your results and identify
+                            potentially vulnerable targets.</td>
+                    </tr>
+                    <tr>
+                        <td>Nessus</td>
+                        <td><img src="files/IML/Nessus.png" alt="Nessus Badge" width="200" loading="lazy"></td>
+                        <td>Nessus is a vulnerability assessment scanner developed by Tenable Network Security to
+                            identify vulnerabilities in systems and applications. In this series, you'll explore Nessus,
+                            and learn how to scan different types of host using Nessus. You'll also learn about the
+                            different types of scans available with Nessus, as well as how to analyze the results from
+                            the tool.</td>
+                    </tr>
+                    <tr>
+                        <td>Autopsy</td>
+                        <td><img src="files/IML/Autopsy.png" alt="Autopsy Badge" width="200" loading="lazy"></td>
+                        <td>Autopsy is an open-source digital forensics tool used by law enforcement, the military, and
+                            within the private sector worldwide. Get to grips with the ins and outs of Autopsy in this
+                            skill series and learn how to investigate cybercrime.</td>
+                    </tr>
+                    <tr>
+                        <td>Splunk</td>
+                        <td><img src="files/IML/Splunk.png" alt="Splunk Badge" width="200" loading="lazy"></td>
+                        <td>Splunk is a software platform used to analyze, search, investigate and visualize
+                            machine-generated data collected from websites, applications, devices and more. In this
+                            series, we will explore the tool and its features, alongside how to use it for data
+                            analysis.</td>
+                    </tr>
+                    <tr>
+                        <td>Elastic Playground</td>
+                        <td><img src="files/IML/Elastic-Playground.png" alt="Elastic Playground Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This unique collection offers you the opportunity to interact with a fully functional
+                            Elastic instance, loaded with a diverse range of data types. You'll get to experiment,
+                            manipulate, and analyze different data sets, providing a comprehensive understanding of
+                            Elastic's capabilities. Whether you're a beginner or an experienced user, this collection
+                            will enhance your skills and deepen your understanding of Elastic's versatility in handling
+                            various data types. Dive in and start your journey of discovery with Elastic.</td>
+                    </tr>
+                    <tr>
+                        <td>Elastic Stack</td>
+                        <td><img src="files/IML/Elastic-Stack.png" alt="Elastic Stack Badge" width="200" loading="lazy">
+                        </td>
+                        <td>The Elastic Stack is a three-layered stack of open-source tools that, when fully assembled,
+                            allows users to analyze data from any type of source and in any format. This skill series
+                            will guide you through the Elastic Stack's simple yet sophisticated beats and dashboards for
+                            professional and efficient log analysis.</td>
+                    </tr>
+                    <tr>
+                        <td>Elastic Data Ingest</td>
+                        <td><img src="files/IML/Elastic-Data-Ingest.png" alt="Elastic Data Ingest Badge" width="200"
+                                loading="lazy"></td>
+                        <td>In this collection, you will learn about Elastic Beat integrations and how they enable
+                            real-time data collection, processing, and analysis. You will gain hands-on experience with
+                            logs and test your analysis skills using Kibana and several default dashboards.</td>
+                    </tr>
+                    <tr>
+                        <td>OWASP Top 10</td>
+                        <td><img src="files/IML/OWASP-Top-10.png" alt="OWASP Top 10 Badge" width="200" loading="lazy">
+                        </td>
+                        <td>This series gives an overview of the OWASP Top 10. This includes an introduction to the list
+                            as well as a high-level coverage of the current list.</td>
+                    </tr>
+                    <tr>
+                        <td>Packet Analysis</td>
+                        <td><img src="files/IML/Packet-Analysis.png" alt="Packet Analysis Badge" width="200"
+                                loading="lazy"></td>
+                        <td>Reading packets and understanding the structure of packet captures are essential skills in
+                            cybersecurity. This series will introduce the main packet analysis tools and how to look for
+                            flags inside packet headers.</td>
+                    </tr>
+                    <tr>
+                        <td>Introducing the Cyber Kill Chain</td>
+                        <td><img src="files/IML/Introduction-to-Cyber-Kill-Chain-LHM.png"
+                                alt="Introducing the Cyber Kill Chain Badge" width="200" loading="lazy"></td>
+                        <td>The cyber kill chain is a cybersecurity model developed in 2011 by Lockheed Martin. It's a
+                            phase-based model that's often used to understand and dissect an adversarial attack
+                            structure. In this series, we'll explore each phase of the cyber kill chain and its
+                            significance.</td>
+                    </tr>
+                    <tr>
+                        <td>The Cyber Kill Chain</td>
+                        <td><img src="files/IML/The-Cyber-Kill-Chain.png" alt="The Cyber Kill Chain Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This series will walk you through each of the seven steps of the Cyber Kill Chain, exploring
+                            a specific attack scenario. You'll learn the tools and techniques used by defenders to
+                            analyze an attack.</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Velociraptor</td>
+                        <td><img src="files/IML/Introduction-to-Velociraptor.png"
+                                alt="Introduction to Velociraptor Badge" width="200" loading="lazy"></td>
+                        <td>Velociraptor is a powerful digital forensic tool that enables investigators to quickly
+                            triage and analyze live systems. It is designed to be run on a live system, rather than a
+                            forensic image, and allows for the collection of volatile data, the identification of
+                            suspicious processes, the creation of memory dumps, and more. This makes it particularly
+                            useful for incident response, where time is of the essence and quick identification of
+                            malicious activity is critical.</td>
+                    </tr>
+                    <tr>
+                        <td>SUNBURST Supply Chain Compromise</td>
+                        <td><img src="files/IML/SUNBURST-Supply-Chain-Compromise.png"
+                                alt="SUNBURST Supply Chain Compromise Badge" width="200" loading="lazy"></td>
+                        <td>In December 2020, FireEye identified that the SolarWinds Orion software package had been
+                            compromised by a nation-state. This was subsequently installed onto the devices of several
+                            thousand organizations, leading to potential compromise. This series takes a closer look at
+                            the malware implants, the APT operators and some of their TTPS.</td>
+                    </tr>
+                    <tr>
+                        <td>Active Directory Basics</td>
+                        <td><img src="files/IML/Active-Directory-Basics.png" alt="Active Directory Basics Badge"
+                                width="200" loading="lazy"></td>
+                        <td>Active Directory (AD) is a Microsoft technology designed for network management. This
+                            introductory collection will guide you through what AD is, how it's structured, and its
+                            functionalities. You'll learn how to navigate the Active Directory Users and Groups console,
+                            effectively manage users, groups, and organizational units within a domain, and how to add a
+                            workstation to a domain. You will also explore key AD topics such as the distinction between
+                            NTLM and Kerberos, group policy management, the mechanism of AD replication, and the
+                            intricacies of managing domain-joined machines. This collection is your gateway to mastering
+                            the essentials of Active Directory.</td>
+                    </tr>
+                    <tr>
+                        <td>CTI First Principles</td>
+                        <td><img src="files/IML/CTI-First-Principles.png" alt="CTI First Principles Badge" width="200"
+                                loading="lazy"></td>
+                        <td>Cyber Threat Intelligence is a discipline that is growing in both scale and relevance to
+                            cybersecurity. It involves proactively identifying and reporting on threats to an
+                            organization. In this collection, you can expect to learn about the fundamentals of
+                            intelligence, threat actors, and creating and testing hypotheses.</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Cryptography</td>
+                        <td><img src="files/IML/Introduction-to-Cryptography.png"
+                                alt="Introduction to Cryptography Badge" width="200" loading="lazy"></td>
+                        <td>This series is aimed at all skill levels, in it you'll learn about the foundation concepts
+                            behind cryptography.</td>
+                    </tr>
+                    <tr>
+                        <td>NIST – Guidelines on Security and Privacy in Public Cloud Computing (800-144)</td>
+                        <td><img src="files/IML/NIST-Guidelines-on-Public-Cloud-Computing.png"
+                                alt="NIST Guidelines on Public Cloud Computing Badge" width="200" loading="lazy"></td>
+                        <td>Guidance time! This series covers the US's National Institute of Standards and Technology
+                            Guidelines on Security and Privacy in Public Cloud Computing.</td>
+                    </tr>
+                    <tr>
+                        <td>NIST – Security and Privacy Controls for Information Systems and Organizations (800-53)</td>
+                        <td><img src="files/IML/NIST-Security-and-Privacy-Controls.png"
+                                alt="NIST Security and Privacy Controls Badge" width="200" loading="lazy"></td>
+                        <td>NIST Special Publication 800-53 outlines protective measures for the security and privacy of
+                            organizations, systems, and individuals.</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Penetration Testing</td>
+                        <td><img src="files/IML/Introduction-to-Pentesting.png"
+                                alt="Introduction to Penetration Testing Badge" width="200" loading="lazy"></td>
+                        <td>This series will look at penetration testing concepts and give the introductory notions
+                            needed to start exploring the field. These labs are theoretical and do not require any
+                            practical skills.</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Windows Exploitation</td>
+                        <td><img src="files/IML/Introduction-to-Windows-Exploitation.png"
+                                alt="Introduction to Windows Exploitation Badge" width="200" loading="lazy"></td>
+                        <td>Windows exploitation is an advanced practice that takes time and commitment to learn
+                            properly. In this series, we will explore the condition of the Windows exploitation market,
+                            the most common types of Windows vulnerabilities, alongside their function and impact,
+                            useful terminology surrounding the topic, and our recommended pre-requisite knowledge before
+                            starting the practical series of full Windows exploitation.</td>
+                    </tr>
+                    <tr>
+                        <td>Linux Command Line</td>
+                        <td><img src="files/IML/Linux-Command-Line.png" alt="Linux Command Line Badge" width="200"
+                                loading="lazy"></td>
+                        <td>Learn how to use the Linux Command Line Interface (CLI) and how it can be used to perform
+                            different tasks. The labs in this skills series range from navigating around a file
+                            structure to combining multiple commands to achieve a specific goal.</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Linux Exploitation</td>
+                        <td><img src="files/IML/Introduction-to-Linux-Exploitation.png"
+                                alt="Introduction to Linux Exploitation Badge" width="200" loading="lazy"></td>
+                        <td>Linux exploitation can be a daunting field to step into, with a steep list of knowledge
+                            prerequisites needed for some of the most basic vulnerabilities. In this series, you'll gain
+                            foundational knowledge on Linux-based software exploitation, learning about the fundamental
+                            concepts, how the exploit development process works, and commonly used tools.</td>
+                    </tr>
+                    <tr>
+                        <td>Scanning</td>
+                        <td><img src="files/IML/Scanning.png" alt="Scanning Badge" width="200" loading="lazy"></td>
+                        <td>Scanning is a crucial element of a penetration test as the information gained from a scan
+                            directly affects the way a tester approaches the rest of their attack. Learn all about pen
+                            test scanning in this skill series.</td>
+                    </tr>
+                    <tr>
+                        <td>Data Privacy</td>
+                        <td><img src="files/IML/Data-Privacy.png" alt="Data Privacy Badge" width="200" loading="lazy">
+                        </td>
+                        <td>This collection provides an introduction to key data privacy concepts and regulations and
+                            how they apply to individuals.</td>
+                    </tr>
+                    <tr>
+                        <td>Data Handling</td>
+                        <td><img src="files/IML/Data-Handling.png" alt="Data Handling Badge" width="200" loading="lazy">
+                        </td>
+                        <td>Data is now a part of everyone's everyday lives. Learning about data handling is essential
+                            for everyone in today's digital age. It helps you understand how to protect your personal
+                            information and maintain online privacy. By learning how to handle data properly, you can
+                            avoid scams, identity theft, and other cybercrimes. It also empowers you to make informed
+                            decisions about securely sharing your data and using online services. Additionally, data
+                            handling knowledge can benefit the organization you work for, as you can maintain the
+                            security and integrity of its data, helping to prevent data breaches and protect sensitive
+                            information. These introductory labs provide a strong foundation for the concept of data
+                            handling.</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Footprint</td>
+                        <td><img src="files/IML/Digital-Footprint.png" alt="Digital Footprint Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This collection explores the topic of digital footprints. It covers what they are, how they
+                            pose risks to you and your organization, well-known cases where digital footprints have been
+                            used for criminal activities, and how to protect yourself.</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Security</td>
+                        <td><img src="files/IML/Physical-Security.png" alt="Physical Security Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This collection explores what physical security is, its risks to you and your organization,
+                            and how malicious actors exploit poor physical security practices. It also covers the
+                            measures you can take to protect yourself and your organization when working remotely and in
+                            your office.</td>
+                    </tr>
+                    <tr>
+                        <td>Windows Concepts</td>
+                        <td><img src="files/IML/Windows-Concepts.png" alt="Windows Concepts Badge" width="200"
+                                loading="lazy"></td>
+                        <td>This series provides hands-on access to Windows OS, looking at registry access, alternate
+                            data streams, and system variables in a safe environment. With a greater understanding of
+                            security controls within Windows, you will be able to identify and exploit weaknesses.</td>
+                    </tr>
+                    <tr>
+                        <td>Human Factors in Cybersecurity</td>
+                        <td><img src="files/IML/Human-Factors-in-Cybersecurity.png"
+                                alt="Human Factors in Cybersecurity Badge" width="200" loading="lazy"></td>
+                        <td>People are the "weakest link". It's the standard narrative across cybersecurity as the role
+                            of human factors is often misunderstood. In this collection, you will explore the role of
+                            human factors in cybersecurity and how you can make people your strongest defense.</td>
+                    </tr>
+                    <tr>
+                        <td>AI Fundamentals</td>
+                        <td><img src="files/IML/AI-Fundamentals.png" alt="AI Fundamentals Badge" width="200"
+                                loading="lazy"></td>
+                        <td>In recent years, artificial intelligence (AI) has become an increasingly important tool in
+                            various fields, including healthcare, financial services, and cybersecurity. In this
+                            collection, you'll explore the fascinating world of AI, including some of the broader terms
+                            that surface when you read about AI, from machine learning to deep learning and neural
+                            networks.</td>
+                    </tr>
+                    <tr>
+                        <td>Hack Your First Computer</td>
+                        <td><img src="files/IML/Hack-Your-First-Computer.png" alt="Hack Your First Computer Badge"
+                                width="200" loading="lazy"></td>
+                        <td>This series will place you in your first Red Team, performing your first exercise. You will
+                            be given guided instructions to compromise a computer. Your first hack!</td>
+                    </tr>
+                    <tr>
+                        <td>Cyber 101</td>
+                        <td><img src="files/IML/Cyber-101.png" alt="Cyber 101 Badge" width="200" loading="lazy"></td>
+                        <td>This skill series provides a strong cybersecurity knowledge base to anyone starting out in
+                            the industry. We'll take you through the core concepts of cybersecurity and how to stay
+                            secure online.</td>
+                    </tr>
+                    <tr>
+                        <td>Cyber Safety</td>
+                        <td><img src="files/IML/Cyber-Safety.png" alt="Cyber Safety Badge" width="200" loading="lazy">
+                        </td>
+                        <td>Get to grips with all things cyber! Everything you need to know about the cyber world is
+                            covered here.</td>
+                    </tr>
+                    <tr>
+                        <td>Staying Safe Online</td>
+                        <td><img src="files/IML/Staying-Safe-Online.png" alt="Staying Safe Online Badge" width="200"
+                                loading="lazy"></td>
+                        <td>A company is only as secure as its people! In this skill series, you'll learn everything
+                            required to keep both you and your company safe online.</td>
+                    </tr>
+                    <tr>
+                        <td>Compliance</td>
+                        <td><img src="files/IML/Compliance.png" alt="Compliance Badge" width="200" loading="lazy"></td>
+                        <td>Having compliance standards in place can help keep an enterprise running. Without them
+                            valuable information can be left exposed, creating serious vulnerabilities. By the end of
+                            this skill series you will be up to speed on essential compliance standards and policies.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>OT Fundamentals</td>
+                        <td><img src="files/IML/OT-Fundamentals.png" alt="OT Fundamentals Badge" width="200"
+                                loading="lazy"></td>
+                        <td>Operation Technology (OT) is a term that covers the hardware and software for Industrial
+                            Control Systems or other physical systems. This collection will teach you the fundamental
+                            terminology and application of frameworks that differentiate IT and OT systems before taking
+                            a deeper look at Incident Response strategy in OT environments.</td>
+                    </tr>
+                </table>
+
+                <br><br><br>
+
+                <h4>TryHackMe Badges Earned</h4>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Badge</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Intro to Pentesting</td>
+                        <td><img src="files/intro-to-pentesting.jpg" alt="Intro to Pentesting Badge" width="200"
+                                loading="lazy"></td>
+                        <td>Become familiar with the principles of pentesting.</td>
+                    </tr>
+                    <tr>
+                        <td>Pentesting Tools</td>
+                        <td><img src="files/pentestertools.jpg" alt="Pentesting Tools Badge" width="200" loading="lazy">
+                        </td>
+                        <td>Become familiar with tools used for pentesting.</td>
+                    </tr>
+                    <tr>
+                        <td>Intro to Web Hacking</td>
+                        <td><img src="files/intro-to-web-hacking.jpg" alt="Intro to Web Hacking Badge" width="200"
+                                loading="lazy"></td>
+                        <td>Become familiar with the basic principles and techniques of web hacking.</td>
+                    </tr>
+                    <tr>
+                        <td>ELKsquisite</td>
+                        <td><img src="files/elksquisite.jpg" alt="ELKsquisite Badge" width="200" loading="lazy"></td>
+                        <td>Completed the Slingshot challenge focused on advanced ELK stack usage.</td>
+                    </tr>
+                    <tr>
+                        <td>Blue</td>
+                        <td><img src="files/blue.jpg" alt="Blue Badge" width="200" loading="lazy"></td>
+                        <td>Exploit a server using EternalBlue exploit kit and POC.</td>
+                    </tr>
+                    <tr>
+                        <td>Hash Cracker</td>
+                        <td><img src="files/hash-cracker.jpg" alt="Hash Cracker Badge" width="200" loading="lazy"></td>
+                        <td>Become proficient in cracking hashes of all kinds. MD5, SHA1, SHA256, and more.</td>
+                    </tr>
+                    <tr>
+                        <td>OhSINT</td>
+                        <td><img src="files/OhSINT.jpg" alt="OhSINT Badge" width="200" loading="lazy"></td>
+                        <td>Conduct an OSINT investigation using open-source intelligence techniques and tools.</td>
+                    </tr>
+                    <tr>
+                        <td>Network Fundamentals</td>
+                        <td><img src="files/network-fundamentals.jpg" alt="Network Fundamentals Badge" width="200"
+                                loading="lazy"></td>
+                        <td>Completed the Networking Fundamentals module.</td>
+                    </tr>
+                    <tr>
+                        <td>Wireshark</td>
+                        <td><img src="files/wireshark.jpg" alt="Wireshark Badge" width="200" loading="lazy"></td>
+                        <td>Become familiar with advanced Wireshark techniques and decrypt a TLS encrypted password.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Linux Privilege Escalation</td>
+                        <td><img src="files/linux-privesc.jpg" alt="Linux Privilege Escalation Badge" width="200"
+                                loading="lazy"></td>
+                        <td>Learn multiple techniques to escalate privileges on a Linux server.</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
     </div>
+
+    <footer>
+        <div>
+            <script src="https://tryhackme.com/badge/13067"></script>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+    <!-- Back to Top Script -->
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        backToTopButton.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
 </body>
-<footer>
-    <div><script src="https://tryhackme.com/badge/13067"></script></div>
-</footer>
+
 </html>

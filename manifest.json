@@ -1,0 +1,20 @@
+{
+    "name": "Andrew Ingram - Cybersecurity Portfolio",
+    "short_name": "AI Portfolio",
+    "description": "Professional cybersecurity portfolio and resume for Andrew Ingram",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a192f",
+    "theme_color": "#00d9ff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/files/cyber4.ico",
+            "sizes": "any",
+            "type": "image/x-icon",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["portfolio", "cybersecurity", "professional"],
+    "lang": "en-US"
+}
