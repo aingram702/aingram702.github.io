@@ -4,7 +4,7 @@
 #    |    --      |
 #    |  ( o )   ( o )
 #  { |        /   |
-#    |     [wwww]  < *Keep off my lawn.txt* )
+#    |     [wwww]  < *Welcome, come on in.* )
 #    [____________|
 #       |   |              /Vvvv/
 #  _____|___|____          |___/
@@ -17,5 +17,5 @@
 # |______________/
 #
 User-agent: *
-Disallow: *
-Crawl-delay: 25
+Allow: /
+Sitemap: https://aingram702.github.io/sitemap.xml
