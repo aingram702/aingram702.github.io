@@ -254,6 +254,12 @@ p {
     transform: translateX(5px);
 }
 
+.work-experience ul li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
 .section iframe {
     border: 3px solid var(--color-border-hover);
     box-shadow: 0 4px 16px rgba(0, 217, 255, 0.2);
