@@ -18,4 +18,5 @@
 #
 User-agent: *
 Allow: /
+Disallow: /resume.html
 Sitemap: https://aingram702.github.io/sitemap.xml
